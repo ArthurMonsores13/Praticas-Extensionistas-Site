@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #FFF0F5;
+    
     font-family: poppinsregular;
     max-width: 1200px;
     margin: 0 auto;
@@ -24,8 +24,9 @@ li{
     margin: 20px;
 }
 
-a{
-    color: white;
+a , h1 , h2 , body
+{
+    color: black;
 }
 
 a:hover{
@@ -33,19 +34,10 @@ a:hover{
     transition: 0.3s all;
 }
 
-#inscreva-se-btn{
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#inscreva-se-btn:hover{
-    background-color: rgb(132, 14, 201);
-    color: white;
-}
-
-h1{
+h1
+{
     font-weight: 200;
+    
 }
 
 main{
@@ -58,6 +50,7 @@ h2{
     font-size: 56px;
     line-height: 10px;
     font-family: poppinsmedium;
+    ;
 }
 
 span{
@@ -70,25 +63,9 @@ p{
     font-family: poppinslight;
 }
 
-img{
+#img{
     width: 580px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-form [type="submit"]{
-    height: 50px;
-    width: 50%;
-    background-color: rgb(132, 14, 201);
-    color: white;
-    font-weight: bold;
-}
-form [type="submit"]:hover{
-    cursor: pointer;
+    padding-left: 90px;
 }
 
 input{
@@ -100,11 +77,13 @@ input{
     font-size: 15px;
 }
 footer {
-    text-align: center;
-    padding: px 0;
-    background-color:purple;
-    color: white;
-    position: fixed;
     width: 100%;
+    padding: 1px ;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
     bottom: 0;
-} 
+    left: 0;
+    padding-left: 570px;
+}

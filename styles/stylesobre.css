@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #FFF0F5;
+    color: black;
     font-family: poppinsregular;
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +25,7 @@ li {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -65,10 +65,12 @@ article {
     justify-content: flex-end;
 }
 
-h2 {
+h2 ,h3
+{
     font-size: 56px;
     line-height: 10px;
     font-family: poppinsmedium;
+    color: black;
 }
 
 span {

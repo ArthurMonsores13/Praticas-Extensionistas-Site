@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-family: poppinsregular;
+    background-color: #FFF0F5;
+    color: black;
+    font-family: 'Poppins', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
@@ -14,9 +14,23 @@ header {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 h2 {
     font-size: 36px;
-    font-family: poppinsmedium;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
