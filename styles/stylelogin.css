@@ -40,6 +40,13 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
+    padding-left: 400px;
+}
+h4 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 form {
@@ -94,6 +101,7 @@ footer {
 @media (max-width: 768px) {
     h2 {
         font-size: 28px; /* Reduzir tamanho do título em telas menores */
+        text-align: center;
     }
 
     form {
