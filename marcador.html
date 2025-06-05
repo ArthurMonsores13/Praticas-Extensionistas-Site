@@ -1,35 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/stylelogin.css" rel="stylesheet">
-    <title>Consultas</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <title>Agendar Consulta - Dr. Arthur</title>
+  </head>
+  <body>
     <header>
+      <nav>
         <ul>
-            <li><a href="./index.html">Início</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="#">Agende Sua Consulta</a></li>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="#">Agende Sua Consulta</a></li>
         </ul>
-        <h4>Marque sua Consulta</h4>
-        
-        <form>
-            <input type="text" name="nome" placeholder="Nome">
-            <input type="text" name="idade" placeholder="Idade">
-            <input type="email" name="email" placeholder="Email">
-            <input type="submit" value="Enviar">
-        </form>
+      </nav>
     </header>
-    <div id="title">
-        <h2>Contatos do Consultorio</h2>
-        <ul>
-            <li>(24)99913713</a></li>
-            <li>(24)99137223</a></li>
-            <li>(24)2489-2311</a></li>
-        </ul>
 
-    </div>
-</body>
+    <main>
+      <div class="container">
+        <div class="card">
+          <h1>Marque sua Consulta</h1>
+
+          <form id="agendamento-form">
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="idade">Idade:</label>
+              <input
+                type="number"
+                id="idade"
+                name="idade"
+                placeholder="Digite sua idade"
+                min="1"
+                max="120"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(24) 99999-9999"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="data">Data da Consulta:</label>
+              <input type="date" id="data" name="data" required />
+            </div>
+
+            <div class="form-group">
+              <label for="horario">Horário:</label>
+              <select id="horario" name="horario" required>
+                <option value="">Selecione um horário</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+              </select>
+            </div>
+
+            <button type="submit" class="cta-button">Agendar Consulta</button>
+          </form>
+
+          <div class="contatos-section">
+            <h2>Contatos do Consultório</h2>
+            <ul class="contatos-list">
+              <li>
+                <strong>Celular:</strong>
+                <a href="tel:+5524999137130">(24) 99913-7130</a>
+              </li>
+              <li>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/5524991372230">(24) 99137-2230</a>
+              </li>
+              <li>
+                <strong>Fixo:</strong>
+                <a href="tel:+552424892311">(24) 2489-2311</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Masters of Codes - Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>
